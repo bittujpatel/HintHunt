@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function congratulations() {
-        riddleContainer.innerHTML = `<h1>Congratulations!</h1><p>You solved all the riddles!</p>`;
+        riddleContainer.innerHTML = `<h3>Congratulations!</h3><p>You solved all the riddles!</p>`;
     }
 
     function updateProgressBar(solved, total) {
