@@ -1,39 +1,174 @@
-/* Add your CSS styles here */
+body {
+    background-color: #333;
+    color: #eceeed;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 15px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #eceeed;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 40px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-right: 8px; /* Adjust margin as needed */
+}
+
+.logo span {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-top: -4px; /* Reduce margin to minimize spacing */
+}
+
 .progress-container {
-    background-color: #ccc;
-    height: 20px;
+    background-color: #333;
+    height: 8px; /* Adjust height as needed */
+    border-radius: 2px; /* Adjust border radius for pixelated effect */
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .progress-bar {
-    background-color: #007bff;
+    background-color: #ff3131;
     height: 100%;
     width: 0;
     transition: width 0.5s;
+    border-radius: 2px; /* Adjust border radius for pixelated effect */
 }
 
 .riddle-container {
     text-align: center;
     margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.riddle-container h2 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .answer-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 20px 0; /* Add margin to top and bottom */
 }
 
 .answer-box input {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000;
-    text-align: center;
-    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #171717;
+    color: #eceeed;
     margin: 5px;
-    background-color: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.answer-box input:focus {
+    animation: blink 1s ease-in-out infinite;
+}
+
+/* Blinking animation for answer text box */
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.answer-box button {
+    background-color: #ff3131;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 .wrong-answer {
-    color: red;
+    color: #ff3131;
+    font-size: 16px;
+    margin-top: 10px;
     display: none;
+}
+
+footer {
+    background-color: #171717;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #eceeed;
+}
+
+/* Neon-style blinking animation for wrong answer */
+.wrong-answer {
+    color: #ff3131;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+    animation: neonBlink 1s ease-in-out infinite;
+}
+
+@keyframes neonBlink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .riddle-container h2 {
+        font-size: 20px;
+    }
+
+    .answer-box input {
+        width: 40px;
+    }
+
+    .answer-box button {
+        padding: 5px 10px;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-width: 50px;
+    }
 }
