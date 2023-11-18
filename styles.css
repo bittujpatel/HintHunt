@@ -1,0 +1,39 @@
+/* Add your CSS styles here */
+.progress-container {
+    background-color: #ccc;
+    height: 20px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.riddle-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.answer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.answer-box input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+    background-color: #fff;
+}
+
+.wrong-answer {
+    color: red;
+    display: none;
+}
