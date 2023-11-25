@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const riddles = [
         { text: "Find the place where Style meets life, a place where fashion can live your best life in style.", answer: "LIFESTYLE" },
         { text: "Craving a taste adventure? Head to the place where the Colonel's secret recipe turns chicken into gold. Its crispy and juicy.", answer: "KFC" },
-        { text: "Seek the store where cute cute toys meets joy, may be they mini toys so fluffy toys.", answer: "MINISO" }
+        { text: "Seek the store where cute cute toys meets joy, may be they mini toys so fluffy toys.", answer: "MINISO" },
+        { text: "You don't have to go to Nepal to eat them, Just understand the Mirror image of MOM and get your gift.", answer: "WOW" },
+        { text: "For anything you use for cleaning or grooming yourself. Your Go to Shop is .", answer: "BATH&BODY" }
+
+    
     ];
 
     let currentRiddleIndex = 0;
