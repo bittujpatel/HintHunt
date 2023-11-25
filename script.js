@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const progressBar = document.querySelector('.progress-bar');
 
     const riddles = [
-        { text: "This sacred gift begins your journey.", answer: "ISKON" },
-        { text: "Riddle 2 text goes here.", answer: "ANSWER2" },
-        { text: "Riddle 3 text goes here.", answer: "ANSWER3" }
+        { text: "Find the place where Style meets life, a place where fashion can live your best life in style.", answer: "LIFESTYLE" },
+        { text: "Craving a taste adventure? Head to the place where the Colonel's secret recipe turns chicken into gold. Its crispy and juicy.", answer: "KFC" },
+        { text: "Seek the store where cute cute toys meets joy, may be they mini toys so fluffy toys.", answer: "MINISO" }
     ];
 
     let currentRiddleIndex = 0;
